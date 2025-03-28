@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <style>
+        /* Header Section with Image */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 5%;
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            flex: 1;
+            z-index: 2;
+        }
+
+        .header-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .header-image img {
+            max-height: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 5px solid white;
+            animation: float 6s ease-in-out infinite;
+        }
+
+    
+
+       /* Navigation Bar Styles Only */
+       .navbar {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-item {
+            margin-left: 20px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .navbar-toggler {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: linear-gradient(135deg, #6e48aa, #9d50bb);
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 15px 0;
+            }
+            
+            .navbar-collapse {
+                display: none;
+            }
+            
+            .navbar-toggler {
+                display: block;
+            }
+            
+            .nav-item {
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .nav-link {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+</head>
+<body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="navbar-brand">Dilmi Senevirathna</a>
+            <button class="navbar-toggler" id="navbar-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#wordpress-projects" class="nav-link">WordPress</a></li>
+                    <li class="nav-item"><a href="#qa-reports" class="nav-link">QA Reports</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- Header Section -->
+     <header class="text-center text-white d-flex align-items-center justify-content-center" id="header">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <h2 style="
+            font-size: 2.5rem;
+            margin: 15px 0;
+            background: linear-gradient(to right,  #fffbc3, #ffffff, #fffd8e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        ">
+                Dilmi Senevirathna</h2>
+            <p class="lead">Software Engineer | Web Developer | QA Engineer</p>
+             <a href="Dilmi Senevirathna_Software Engineer.pdf" class="btn btn-primary mt-3" download="Dilmi_Senevirathna_CV.pdf">
+            <i class="fas fa-download"></i> Download CV
+        </a>
+        </div>
+     
+        <div class="header-image">
+            <!-- Replace with your actual image path -->
+            <img src="Me.jpg" alt=""/>
+        </div>
+    </header>
+
+   
+
+
+    <!-- About Section -->
+    <section id="about" class="container text-center mt-5">
+        <h2>About Me</h2>
+        <p>Software Engineer and Quality Assurance Engineer with over 1.5 years of experience in front-end development and software testing. Skilled in building responsive and high-performance web applications using modern technologies. Passionate about learning, collaboration, and delivering scalable solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5">
+        <h2>Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3">HTML</div>
+            <div class="col-md-3">CSS</div>
+            <div class="col-md-3">React</div>
+            <div class="col-md-3">PHP</div>
+            <div class="col-md-3">JavaScript</div>
+            <div class="col-md-3">Node.js</div>
+            <div class="col-md-3">SQL</div>
+            <div class="col-md-3">UI/UX Design</div>
+            <div class="col-md-3">Java</div>
+            <div class="col-md-3">Python</div>
+            <div class="col-md-3">Vue.js</div>
+            <div class="col-md-3">jQuery</div>
+            <div class="col-md-3">XML</div>
+            <div class="col-md-3">React Native</div>
+            <div class="col-md-3">Logo Designing</div>
+            <div class="col-md-3">WordPress</div>
+        </div>
+    </section>
+
+
+<!-- Education Section -->
+<section id="education" class="container mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="header-line"></div>
+    </div>
+    <div class="education-container">
+        <div class="education-item">
+            <div class="education-icon">
+                <i class="fas fa-university"></i>
+            </div>
+            <div class="education-content">
+                <h3>Bachelor of Software Engineering (Honours)</h3>
+                <p class="institution">Open University Sri Lanka</p>
+                <p class="duration">2020 - Present</p>
+                <div class="education-details">
+                    <p>Currently pursuing degree with focus on software development methodologies, algorithms, and system design.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div class="education-content">
+                <h3>Diplomas</h3>
+                <ul class="diploma-list">
+                    <li>Diploma in Human Resources Management - IMBS Green Campus</li>
+                    <li>Diploma in English - IMBS Green Campus</li>
+                    <li>Diploma in Cyber Security and Ethical Hacking - SITC Campus</li>
+                    <li>Diploma in Software Testing</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <div class="education-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="education-content">
+                <h3>Certificates</h3>
+                <div class="certificate-grid">
+                    <div class="certificate-item">Quality Assurance (QA) Techniques</div>
+                    <div class="certificate-item">Test Automation Foundation</div>
+                    <div class="certificate-item">API Test Automation</div>
+                    <div class="certificate-item">Continuous Testing</div>
+                    <div class="certificate-item">Web Element Locator Strategies</div>
+                    <div class="certificate-item">Selenium IDE Automation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+ <!-- Experience Section -->
+ <section id="experience" class="container mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="header-line"></div>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">2024 - 2025</div>
+            <div class="timeline-content">
+                <h3>Software Engineer </h3>
+                <p class="company">eSupport Technologies</p>
+                <ul class="responsibilities">
+                    <li>Developed and tested software applications</li>
+                    <li>Participated in QA processes and test automation</li>
+                    <li>Collaborated on team projects using Agile methodologies</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>WordPress Developer</h3>
+                <p class="company">Freelance</p>
+                <ul class="responsibilities">
+                    <li>Developed 10+ WordPress websites for various clients</li>
+                    <li>Customized themes and plugins to meet client requirements</li>
+                    <li>Optimized websites for performance and SEO</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-date">2023-2024</div>
+            <div class="timeline-content">
+                <h3>Frontend Developer</h3>
+                <p class="company">Realpos pvt ltd</p>
+                <ul class="responsibilities">
+                    <li>Dynamic and detail-oriented Frontend Developer with hands-on experience in building responsive and
+                        interactive web applications. Proficient in modern frontend technologies including React, JavaScript, HTML,
+                        and CSS. Skilled in translating and developing UI/UX designs into high-quality code while optimizing
+                        performance and user experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <h2>Projects</h2>
+        <h3>React Projects</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Learnmate Online Learning Platform</h5>
+                <p>Designed an online learning platform with React, Node.js, and SQL, delivering interactive and responsive features.</p>
+                <a href="https://dilsenevirathna.github.io/Learnmate/" class="btn btn-secondary">View Project</a>
+            </div>
+            <div class="col-md-4">
+                <h5>E-Store E-Commerce Application</h5>
+                <p>Developed an e-commerce site with features like shopping carts, secure checkout, and product listings using React and SQL.</p>
+                <a href="https://dilsenevirathna.github.io/E-Store/" class="btn btn-secondary">View Project</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Weather App</h5>
+                <p>Created a real-time weather app using React, integrated with APIs for seamless weather updates and responsiveness.</p>
+                <a href="https://dilsenevirathna.github.io/Weather-App/" class="btn btn-secondary">View Project</a>
+            </div>
+        </div>
+    </section>
+        
+    <section id="projects" class="container mt-5">
+       
+        <h3>Html Projects</h3>
+        <div class="row">    
+            <!-- New Projects from PDF Resume -->
+            <div class="col-md-4">
+                <h5>Food Delivery App</h5>
+                <p>Android Studio food delivery application built with Java and SQL Lite.</p>
+                <a href="https://drive.google.com/drive/folders/1HCTW1G8p8ZFSFcmCljk70_00Oequm5k?usp=sharing" class="btn btn-secondary">View Project</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Online Shopping Website</h5>
+                <p>E-commerce platform with product listings and shopping features.</p>
+                <a href="https://drive.google.com/drive/folders/1L8X0_pd894wJHDSLHYccWuFo-c_bGUWX?usp=sharing" class="btn btn-secondary">View Project</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Online Clothes Shop</h5>
+                <p>E-commerce website specializing in clothing and fashion items.</p>
+                <a href="https://drive.google.com/drive/folders/19OKqyZ2b-9ryp4KsuJwiOnT-bJ-p2Fmz?usp=sharing" class="btn btn-secondary">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WordPress Projects Section -->
+    <section id="wordpress-projects" class="container mt-5">
+        <h2>WordPress Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Avendy</h5>
+                <p>A sophisticated corporate website for a business consultancy firm featuring service pages, client testimonials, and contact forms. Implemented custom themes and plugins for enhanced functionality.</p>
+                <a href="http://avendy.lk/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Tasseoz</h5>
+                <p>Digital marketing agency website with portfolio showcase, service descriptions, and lead generation forms. Optimized for SEO and mobile responsiveness with custom page builders.</p>
+                <a href="http://tasseoz.com/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Aura Organic</h5>
+                <p>E-commerce platform for organic products featuring WooCommerce integration, product catalog, shopping cart, and secure payment gateways. Designed with a clean, nature-inspired aesthetic.</p>
+                <a href="http://auraorganic1.com/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Everesse</h5>
+                <p>Corporate website for a business solutions provider with multilingual support, team profiles, and case studies. Implemented advanced security features and regular maintenance.</p>
+                <a href="https://everesse.lk/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>NTN Trading</h5>
+                <p>Business website for an import/export company featuring product listings, company history, and contact information. Developed with fast loading times and cross-browser compatibility.</p>
+                <a href="https://ntntrading.com/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>ICT VIP Lawaya</h5>
+                <p>Professional services website with appointment booking system, service packages, and client portal. Integrated with calendar plugins and contact management systems.</p>
+                <a href="https://ictviplawaya.lk/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>ABA Publication</h5>
+                <p>Publishing company website featuring book catalog, author profiles, and online ordering system. Implemented custom post types for different publication categories.</p>
+                <a href="http://abapublication.lk/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Susajee</h5>
+                <p>E-commerce platform for fashion products with advanced filtering, wishlist functionality, and customer accounts. Optimized product pages for conversions and user experience.</p>
+                <a href="https://susajee.com/" class="btn btn-secondary" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- QA Reports Section -->
+  <section id="qa-reports" class="container mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-file-alt"></i> QA Reports & Certifications</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">View my quality assurance documentation and testing reports</p>
+    </div>
+    
+    <div class="pdf-viewer-container">
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="lm.png" alt="QA Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Learnmate QA Test Report</h3>
+                <p>Detailed quality assurance testing documentation including test cases, results, and automation scripts.</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> June 2025</span>
+                    <span><i class="fas fa-file-contract"></i> 15 pages</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1ba11nbUt2g39Y8L07CngGnT9NKc304pX/view?usp=sharing" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                <a href="https://drive.google.com/file/d/1ba11nbUt2g39Y8L07CngGnT9NKc304pX/view?usp=sharng" class="btn btn-pdf-download" download>
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+
+
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="QA.png" alt="Automation Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Test Automation Documentation for LMS</h3>
+                <p>Selenium Testing Report</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> November 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 3 pages</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1JcMnGuUIzz-gPlRH4rsASdQzEtVqge0O/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                <a href="https://drive.google.com/drive/folders/LXXY8aWwAvaJGYaCqChYBPSAGxthZHPZU?usp=saaaring" class="btn btn-pdf-download" download>
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</section>
+
+
+
+ <!-- QA Reports Section -->
+ <section id="qa-reports" class="container mt-5">
+    <div class="section-header">
+        <h2><i class="fas fa-file-alt"></i> QA Certifications</h2>
+        <div class="header-line"></div>
+    </div>
+    
+    <div class="pdf-viewer-container">
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="certificate1.png" alt="QA Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Cost of Software Quality</h3>
+                <p>Detailed quality assurance testing documentation including test cases, results, and automation scripts.</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> February 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 1 pages</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1U2e58T7ftRppektEqXWGoglfTYcX42TF/view?usp=sharing" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="certificate2.png" alt="Automation Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Foundation of Successfull Automation</h3>
+                <p>Complete guide to test automation processes with Selenium and JMeter implementations.</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> February 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 1 pages</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1sT6MziIed9BOd8noZjXYcWtLX5Oebyva/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                
+            </div>
+        </div>
+
+
+
+    <div class="pdf-card">
+        <div class="pdf-thumbnail">
+            <i class="fas fa-file-pdf"></i>
+            <img src="certificate3.png" alt="Automation Report Thumbnail">
+        </div>
+        <div class="pdf-info">
+            <h3>Quality Assuarance</h3>
+            <p>Techniques and methodologies</p>
+            <div class="pdf-meta">
+                <span><i class="fas fa-calendar-alt"></i> March 2024</span>
+                <span><i class="fas fa-file-contract"></i> 1 page</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1PZL21BNbwgvXv4c8fH0CLqsDrl6BB6yF/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                <i class="fas fa-eye"></i> View Full Report
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+    <div class="pdf-viewer-container">
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="certificate4.png" alt="QA Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>API test Automation with postman</h3>
+                <p>API automation leaning course</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> March 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 1 page</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1GB0VlYlKxwMhawa7nO9gJW4rj2V8JCyt/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+               
+            </div>
+        </div>
+        
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="certificate5.png" alt="Automation Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Countinous Testing</h3>
+                <p>Complete guide to test automation processes with Selenium and JMeter implementations.</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> March 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 1 page</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1DQEADRzn0jwHyMb4fj1rB34gfXvaHarN/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="pdf-card">
+            <div class="pdf-thumbnail">
+                <i class="fas fa-file-pdf"></i>
+                <img src="certificate6.png" alt="Automation Report Thumbnail">
+            </div>
+            <div class="pdf-info">
+                <h3>Web Element Locator Strategies</h3>
+                <p>Website retaed Testing for different technologies</p>
+                <div class="pdf-meta">
+                    <span><i class="fas fa-calendar-alt"></i> April 2024</span>
+                    <span><i class="fas fa-file-contract"></i> 1 page</span>
+                </div>
+                <a href="https://drive.google.com/file/d/19afDi6S2fz9Ap6jayPIEI161zcIUEYnp/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                    <i class="fas fa-eye"></i> View Full Report
+                </a>
+                
+            </div>
+        </div>
+    
+
+
+
+
+    <div class="pdf-card">
+        <div class="pdf-thumbnail">
+            <i class="fas fa-file-pdf"></i>
+            <img src="certificate7.png" alt="Automation Report Thumbnail">
+        </div>
+        <div class="pdf-info">
+            <h3>Codless Test Automation with Selanium IDE</h3>
+            <p>Guide to test automation processes with Selenium and JMeter implementations.</p>
+            <div class="pdf-meta">
+                <span><i class="fas fa-calendar-alt"></i> April 2024</span>
+                <span><i class="fas fa-file-contract"></i> 1 page</span>
+            </div>
+            <a href="https://drive.google.com/file/d/1SP_2bj1oMv2kpwrRVRHhrE0UstGKHgv-/view?usp=drive_link" class="btn btn-pdf" target="_blank">
+                <i class="fas fa-eye"></i> View Full Report
+            </a>
+            
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="container mt-5">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/chathuryadilmi@gmail.com" method="POST">
+        <!-- Required Fields for FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://github.com/DilSenevirathna/Dilmi_Senevirathna.git/thank-you.html">
+        
+        <!-- Your Form Fields -->
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-pdf-download">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+</section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Dilmi Senevirathna
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('navbar-toggler').addEventListener('click', function() {
+            const navbarCollapse = document.getElementById('navbar-collapse');
+            navbarCollapse.style.display = navbarCollapse.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('navbar-collapse').style.display = 'none';
+                }
+            });
+        });
+
+        // Add active class to current section in viewport
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
