@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilmi_Senevirathna</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 
 
@@ -102,6 +102,16 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
+
+        h3 {
+            color: #2e7d32;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+}
+
         
         @media (max-width: 768px) {
             .navbar-nav {
@@ -137,6 +147,48 @@
         html {
             scroll-behavior: smooth;
         }
+
+
+        /* Dropdown styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.6em;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    border-radius: 10px; /* Rounded corners for the whole dropdown */
+    overflow: hidden;
+}
+
+.dropdown-menu .dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(135deg, #edc9f1, #9e33bf);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
     </style>
 </head>
 </head>
@@ -155,8 +207,16 @@
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#wordpress-projects" class="nav-link">WordPress</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#projects" class="nav-link dropdown-toggle">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#react-projects" class="dropdown-item">React Projects</a></li>
+                            <li><a href="#wordpress-projects" class="dropdown-item">Wordpress Projects</a></li>
+                            <li><a href="#php-projects" class="dropdown-item">PHP Projects</a></li>
+                            <li><a href="#html-projects" class="dropdown-item">HTML/css Projects</a></li>
+                           
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="#qa-reports" class="nav-link">QA Reports</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -341,6 +401,7 @@
     <!-- Projects Section -->
     <section id="projects" class="container mt-5">
         <h2>Projects</h2>
+        <section id="react-projects" class="container mt-5"></section>
         <h3>React Projects</h3>
         <div class="row">
             <div class="col-md-4">
@@ -360,14 +421,45 @@
             </div>
         </div>
     </section>
+
+     <!-- PHP-Projects Section -->
+     <section id="projects" class="container mt-5">
+        <h2></h2>
+        <section id="php-projects" class="container mt-5"></section>
+        <h3>PHP Projects</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Library Management System</h5>
+                <p>🛠 Tech Stack Used
+
+                    🌐 Frontend: HTML5, CSS3, Bootstrap, JavaScript
+                    
+                    ⚙️ Backend: PHP
+                    
+                    🗃 Database: MySQL
+                    
+                    📁 Version Control & Hosting: Git + GitHub
+                    
+                    🖥️ Local Server: XAMPP for Apache & MySQL</p>
+                <a href="https://github.com/DilSenevirathna/Library-Management-System" class="btn btn-secondary">View Project</a>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+
+
+   <!-- HTML-Projects Section -->
+
         
     <section id="projects" class="container mt-5">
-       
-        <h3>Html Projects</h3>
-        <div class="row">    
-            <!-- New Projects from PDF Resume -->
+        <h2></h2>
+        <section id="html-projects" class="container mt-5"></section>
+        <h3>Html/Css/Javascript Projects</h3>
+        <div class="row">
             <div class="col-md-4">
-                <h5>Food Delivery App</h5>
                 <p>Android Studio food delivery application built with Java and SQL Lite.</p>
                 <a href="https://drive.google.com/drive/folders/1HCTW1G8p8ZFSFcmCljk70_00Oequm5k?usp=sharing" class="btn btn-secondary">View Project</a>
             </div>
@@ -376,17 +468,14 @@
                 <p>E-commerce platform with product listings and shopping features.</p>
                 <a href="https://drive.google.com/drive/folders/1L8X0_pd894wJHDSLHYccWuFo-c_bGUWX?usp=sharing" class="btn btn-secondary">View Project</a>
             </div>
-            <div class="col-md-4">
-                <h5>Online Clothes Shop</h5>
-                <p>E-commerce website specializing in clothing and fashion items.</p>
-                <a href="https://drive.google.com/drive/folders/19OKqyZ2b-9ryp4KsuJwiOnT-bJ-p2Fmz?usp=sharing" class="btn btn-secondary">View Project</a>
-            </div>
         </div>
     </section>
 
     <!-- WordPress Projects Section -->
-    <section id="wordpress-projects" class="container mt-5">
-        <h2>WordPress Projects</h2>
+    <section id="projects" class="container mt-5">
+        <h2></h2>
+        <section id="wordpress-projects" class="container mt-5"></section>
+        <h3>Wordpress Projects</h3>
         <div class="row">
             <div class="col-md-4">
                 <h5>Avendy</h5>
@@ -644,12 +733,6 @@
 
 <section id="contact" class="container mt-5">
     <h2>Contact Me</h2>
-
-    
-    <p>Phone: +94 77 5 76 5299</p>
-    <p>Email: <a href="mailto:chathuryadilmi@gmail.com">chathuryadilmi@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/dilmi-senevirathna/" target="_blank">Dilmi Senevirathna</a></p>
-    
     <form action="https://formsubmit.co/chathuryadilmi@gmail.com" method="POST">
         <!-- Required Fields for FormSubmit -->
         <input type="hidden" name="_captcha" value="false">
