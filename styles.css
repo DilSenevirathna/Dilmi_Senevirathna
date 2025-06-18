@@ -728,26 +728,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.btn {
-  padding: 0.5rem 1rem;
-  background-color: #3498db;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #2980b9;
-}
-
-.btn.github {
-  background-color: #24292e;
-}
-
-.btn.github:hover {
-  background-color: #1b1f23;
-}
 
 
 
