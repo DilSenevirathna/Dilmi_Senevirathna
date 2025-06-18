@@ -793,6 +793,95 @@
         <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
       </div>
     </div>
+  </div>
+</section>
+
+<style>
+.qa-reports {
+  padding: 2rem;
+  background-color: #f4f7fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.qa-reports h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.report-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+}
+
+.report-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.report-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.report-card p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn.github {
+  background-color: #24292e;
+}
+
+.btn.github:hover {
+  background-color: #1b1f23;
+}
+</style>
+
 
     
     <div class="report-card">
