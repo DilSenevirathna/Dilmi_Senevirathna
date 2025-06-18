@@ -665,34 +665,6 @@ footer {
     box-shadow: 0 5px 15px rgba(110, 72, 170, 0.2);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .pdf-viewer-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .pdf-thumbnail {
-        height: 200px;
-    }
-    
-    .btn-pdf, .btn-pdf-download {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-.card-body .btn i {
-    margin-right: 5px;
-}
-
 .qa-reports {
   padding: 2rem;
   background-color: #f4f7fb;
@@ -776,5 +748,33 @@ footer {
 .btn.github:hover {
   background-color: #1b1f23;
 }
-}
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pdf-viewer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .pdf-thumbnail {
+        height: 200px;
+    }
+    
+    .btn-pdf, .btn-pdf-download {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-body .btn i {
+    margin-right: 5px;
+}
+}
