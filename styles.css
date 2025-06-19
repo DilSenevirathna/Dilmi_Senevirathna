@@ -739,6 +739,14 @@ footer {
   gap: 0.6rem;
 }
 
+.qa-buttons1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 0.6rem;
+}
+
+
 .qa-btn {
   padding: 0.5rem 1.2rem;
   background-color: #c234db;
