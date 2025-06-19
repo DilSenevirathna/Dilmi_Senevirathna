@@ -275,6 +275,7 @@
 <section id="skills" class="container mt-5">
     <h2 class="mb-4 text-center">Skills</h2>
     <div class="row text-center">
+        <!-- Existing Skills (unchanged) -->
         <div class="col-md-3 mb-4">
             <i class="devicon-html5-plain colored" style="font-size: 3rem;"></i>
             <div class="small">HTML</div>
@@ -343,8 +344,27 @@
             <i class="devicon-androidstudio-plain colored" style="font-size: 3rem;"></i>
             <div class="small">Android Studio</div>
         </div>
+
+        <!-- ✅ Newly Added QA Tools -->
+        <div class="col-md-3 mb-4">
+            <i class="fas fa-robot text-info" style="font-size: 3rem;"></i>
+            <div class="small">Selenium</div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <i class="fas fa-chart-line text-success" style="font-size: 3rem;"></i>
+            <div class="small">JMeter</div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <i class="fas fa-terminal text-primary" style="font-size: 3rem;"></i>
+            <div class="small">Playwright</div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <i class="fab fa-jira text-primary" style="font-size: 3rem;"></i>
+            <div class="small">Jira</div>
+        </div>
     </div>
 </section>
+
 
 
 
@@ -370,6 +390,22 @@
             </div>
         </div>
         
+
+        <div class="education-item">
+            <div class="education-icon">
+                <i class="fas fa-clipboard-check"></i>
+            </div>
+            <div class="education-content">
+                <h3>ISTQB Foundation level Certificate</h3>
+                <p class="testing">S L Software Testing board</p>
+                <p class="duration">Reading</p>
+                <div class="education-details">
+                    <p>preparing for September exam</p>
+                </div>
+            </div>
+        </div>
+
+
         <div class="education-item">
             <div class="education-icon">
                 <i class="fas fa-certificate"></i>
@@ -741,76 +777,87 @@
         <p class="section-subtitle">View my quality assurance documentation and testing reports</p>
     </div>
 
-<section class="qa-reports">
+<section class="qa-section">
   <h2>🧪 QA Testing Report Samples</h2>
-  <div class="report-grid">
-    <div class="report-card">
-      <img src="your_image_path/lankajobs.jpg" alt="LankaJobs Report" class="report-img" />
+  <div class="qa-grid">
+    <div class="qa-card qa-lankajobs">
+      <img src="images/talentlanka.png" alt="LankaJobs Report" class="qa-img" />
       <h3>Manual Testing – LankaJobs.lk</h3>
       <p>Manual testing report for LankaJobs job portal validating core user journeys like registration and CV upload.</p>
-      <div class="buttons">
-        <a href="YOUR_REPORT_DOCX_URL_HERE" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+      <div class="qa-buttons">
+        <a id="btn-lankajobs-view-report" href="reports/QA TRAINEE PRACTICAL TEST_Dilmi Senevirathna.pdf" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-lankajobs-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
 
-    <div class="report-card">
-      <img src="your_image_path/pickme.jpg" alt="PickMe Report" class="report-img" />
+
+    <div class="qa-card qa-lankajobs">
+      <img src="images/image.png" alt="LankaJobs Report" class="qa-img" />
+      <h3>Manual Testing – LankaJobs.lk</h3>
+      <p>Manual testing report for LankaJobs job portal validating core user journeys like registration and CV upload.</p>
+      <div class="qa-buttons">
+        <a id="btn-lankajobs-view-report" href="reports/Manual_Testing_Report_LankaJobs.docx" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-lankajobs-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="qa-card qa-pickme">
+      <img src="images/pickme.png" alt="PickMe Report" class="qa-img" />
       <h3>Selenium Testing – PickMe.lk</h3>
       <p>Automated Selenium test for login, booking, and payment functionalities on PickMe ride sharing platform.</p>
-      <div class="buttons">
-        <a href="YOUR_REPORT_DOCX_URL_HERE" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+      <div class="qa-buttons">
+        <a id="btn-pickme-view-report" href="reports/QA_Test_Report_2_pickme.docx" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-pickme-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
 
-    <div class="report-card">
-      <img src="your_image_path/takas.jpg" alt="Takas Report" class="report-img" />
+    <div class="qa-card qa-takas">
+      <img src="images/takas.png" alt="Takas Report" class="qa-img" />
       <h3>Manual Testing – Takas.lk</h3>
       <p>Test report covering checkout and cart behavior on Takas.lk shopping platform.</p>
-      <div class="buttons">
-        <a href="YOUR_REPORT_DOCX_URL_HERE" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+      <div class="qa-buttons">
+        <a id="btn-takas-view-report" href="reports/QA_Test_Report_3_takas.docx" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-takas-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
 
-    <div class="report-card">
-      <img src="your_image_path/mydeal.jpg" alt="MyDeal Report" class="report-img" />
+    <div class="qa-card qa-mydeal">
+      <img src="images/mydeal.png" alt="MyDeal Report" class="qa-img" />
       <h3>Selenium Testing – MyDeal.lk</h3>
       <p>Automated UI verification for deals, countdowns, and filters on MyDeal.lk platform.</p>
-      <div class="buttons">
-        <a href="YOUR_REPORT_DOCX_URL_HERE" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+      <div class="qa-buttons">
+        <a id="btn-mydeal-view-report" href="reports\QA_Test_Report_4_mydeal.docx" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-mydeal-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
 
-    <div class="report-card">
-      <img src="your_image_path/kapruka.jpg" alt="Kapruka Report" class="report-img" />
+    <div class="qa-card qa-kapruka">
+      <img src="images/kapruka.png" alt="Kapruka Report" class="qa-img" />
       <h3>Hybrid Testing – Kapruka.com</h3>
       <p>Combination of manual and Selenium testing on gift ordering and delivery modules on Kapruka.</p>
-      <div class="buttons">
-        <a href="YOUR_REPORT_DOCX_URL_HERE" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+      <div class="qa-buttons">
+        <a id="btn-kapruka-view-report" href="reports\QA_Test_Report_5_kapruka.com.docx" target="_blank" class="qa-btn">View Report</a>
+        <a id="btn-kapruka-view-github" href="https://github.com/DilSenevirathna/QA-testing-samples" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
-    <div class="report-card">
-      <img src="images/lm.png" alt="Kapruka Report" class="report-img" />
+    <div class="qa-card qa-kapruka">
+      <img src="images/lm.png" alt="Kapruka Report" class="qa-img" />
       <h3>Learnmate QA Test Report</h3>
       <p>Detailed quality assurance testing documentation including test cases, results, and automation scripts.</p>
       <div class="buttons">
-        <a href="https://drive.google.com/file/d/1ba11nbUt2g39Y8L07CngGnT9NKc304pX/view?usp=sharing" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+        <a href="https://drive.google.com/file/d/1ba11nbUt2g39Y8L07CngGnT9NKc304pX/view?usp=sharing" target="_blank" class="qa-btn">View Report</a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
 
     
-    <div class="report-card">
-      <img src="images/QA.png" alt="Kapruka Report" class="report-img" />
+    <div class="qa-card qa-kapruka">
+      <img src="images/QA.png" alt="Kapruka Report" class="qa-img" />
       <h3>Test Automation Documentation for LMS</h3>
       <p>Combination of manual and Selenium testing on gift ordering and delivery modules on Library-Management-System.</p>
       <div class="buttons">
-        <a href="https://drive.google.com/file/d/1JcMnGuUIzz-gPlRH4rsASdQzEtVqge0O/view?usp=drive_link" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
+        <a href="https://drive.google.com/file/d/1JcMnGuUIzz-gPlRH4rsASdQzEtVqge0O/view?usp=drive_link" target="_blank" class="qa-btn">View Report</a>
+        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="qa-btn qa-github">View on GitHub</a>
       </div>
     </div>
   </div>
@@ -818,28 +865,7 @@
 
 
     
-    <div class="report-card">
-      <img src="images/lm.png" alt="Kapruka Report" class="report-img" />
-      <h3>Learnmate QA Test Report</h3>
-      <p>Detailed quality assurance testing documentation including test cases, results, and automation scripts.</p>
-      <div class="buttons">
-        <a href="https://drive.google.com/file/d/1ba11nbUt2g39Y8L07CngGnT9NKc304pX/view?usp=sharing" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
-      </div>
-    </div>
-
     
-    <div class="report-card">
-      <img src="images/QA.png" alt="Kapruka Report" class="report-img" />
-      <h3>Test Automation Documentation for LMS</h3>
-      <p>Combination of manual and Selenium testing on gift ordering and delivery modules on Library-Management-System.</p>
-      <div class="buttons">
-        <a href="https://drive.google.com/file/d/1JcMnGuUIzz-gPlRH4rsASdQzEtVqge0O/view?usp=drive_link" target="_blank" class="btn">View Report</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" target="_blank" class="btn github">View on GitHub</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 

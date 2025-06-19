@@ -150,8 +150,13 @@ h2:after {
 }
 
 .btn-secondary {
-    background-color: #6e48aa;
-    color: white;
+    padding: 0.5rem 1.2rem;
+  background-color: #c234db;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .btn-secondary:hover {
@@ -665,68 +670,97 @@ footer {
     box-shadow: 0 5px 15px rgba(110, 72, 170, 0.2);
 }
 
-.qa-reports {
+/* qa-reports-style.css */
+
+/* qa-reports-style.css */
+
+.qa-section {
   padding: 2rem;
-  background-color: #f4f7fb;
+  background-color: #f4f6f9;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.qa-reports h2 {
+.qa-section h2 {
   font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
   text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
 }
 
-.report-grid {
+.qa-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
-.report-card {
-  background: #fff;
+.qa-card {
+  background-color: #ffffff;
   border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
+  padding: 1rem;
 }
 
-.report-card:hover {
+.qa-card:hover {
   transform: translateY(-5px);
 }
 
-.report-img {
+.qa-img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.report-card h3 {
+.qa-card h3 {
+  font-size: 1.2rem;
   margin: 0.5rem 0;
-  font-size: 1.1rem;
-  color: #34495e;
   text-align: center;
+  color: #34495e;
 }
 
-.report-card p {
-  font-size: 0.9rem;
+.qa-card p {
+  font-size: 0.95rem;
   color: #555;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.buttons {
+.qa-buttons {
   display: flex;
-  gap: 0.5rem;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
 }
+
+.qa-btn {
+  padding: 0.5rem 1.2rem;
+  background-color: #c234db;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.qa-btn:hover {
+  background: linear-gradient(135deg, #5d3d99, #8c45a8);
+}
+
+.qa-btn.qa-github {
+  background-color: #24292e;
+}
+
+.qa-btn.qa-github:hover {
+  background-color: #1b1f23;
+}
+
 
 
 
